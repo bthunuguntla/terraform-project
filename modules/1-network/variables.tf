@@ -1,0 +1,1 @@
+# No variables are required for the network module as it creates its own resources.
