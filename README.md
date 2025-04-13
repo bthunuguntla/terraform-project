@@ -10,10 +10,10 @@ The network module creates the following resources.
 * Security group allowing HTTP access
 
 ## Instance Module
-The instance modules creates two ec2 instances with user data.
+The instance module creates two ec2 instances with user data.
 
 ## Load Balancer Module
-The load balancer module creates a load balancer with two target groups.
+The load balancer module creates a load balancer with two target groups, for Blue and Green deployments.
 
 ## Main Module
 The main module actually calls the above child modules to create network, ec2 and load balancer resources.
@@ -46,4 +46,4 @@ The main module actually calls the above child modules to create network, ec2 an
 5. Access load balancer DNS name - displaying Green deployment
 ![Access load balancer URL](images/image-17.png)
 
-6. Read Terraform state file and lock file, attached here for more details
+6. Verify Terraform state file and lock file, attached in this solution for more details
