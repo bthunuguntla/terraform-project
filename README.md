@@ -1,7 +1,7 @@
 # Terraform Project
 This repository contains terraform code to create the modules & resources in AWS cloud platform, to demonstrate Blue-Green deployments using Application Load Balancer.
 
-#Network Module
+## Network Module
 The network module creates the following resources.
 * VPC
 * Subnets - 2 subnets for two availability zones
@@ -9,16 +9,16 @@ The network module creates the following resources.
 * Route table & associate resources
 * Security group allowing HTTP access
 
-#Instance Module
+## Instance Module
 The instance modules creates two ec2 instances with user data.
 
-#Load Balancer Module
+## Load Balancer Module
 The load balancer module creates a load balancer with two target groups.
 
-#Main Module
+## Main Module
 The main module actually calls the above child modules to create network, ec2 and load balancer resources.
 
-#Verification
+## Verification
 1. Two EC2 instances are created in a VPC, in us-east-1 region
 ![Network interfaces](images/image-1.png)
 ![Security groups](images/image-2.png)
